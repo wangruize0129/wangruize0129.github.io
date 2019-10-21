@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>我的第三篇博客</title>
+      <link>http://example.org/posts/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 21 Oct 2019 23:01:09 +0800</pubDate>
+      
+      <guid>http://example.org/posts/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+      <description>hugo使用感受 感觉hugo的bug还挺多的，不知道为什么会这样！</description>
+    </item>
+    
+    <item>
       <title>我的第二篇博客</title>
       <link>http://example.org/posts/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Mon, 21 Oct 2019 23:01:09 +0800</pubDate>

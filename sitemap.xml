@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>http://example.org/posts/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2019-10-21T23:01:09+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/posts/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2019-10-21T23:01:09+08:00</lastmod>
   </url>
