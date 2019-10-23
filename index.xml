@@ -13,10 +13,10 @@
     
     <item>
       <title>Posts</title>
-      <link>http://localhost:1313/posts/</link>
+      <link>http://localhost:1313/post/</link>
       <pubDate>Wed, 23 Oct 2019 16:43:43 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/</guid>
+      <guid>http://localhost:1313/post/</guid>
       
         <description></description>
       
