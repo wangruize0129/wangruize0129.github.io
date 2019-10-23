@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xianmin" />
-  <meta name="description" content="HTML是谁发明的 HTML诞生于李爵士的一片文章：HTML Tags 可以由这里进行访问：（https://html.com/tags/） HTML起手" />
+  <meta name="description" content="今天跟着方方老师学习了HTML的相关知识，对于HTML有了新的认识。 接下来，我就会以博客的形式分享关于HTML的一些相关的知识。 HTML的历" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -60,25 +60,25 @@
 
 
 <meta property="og:title" content="《HTML入门笔记1》" />
-<meta property="og:description" content="HTML是谁发明的 HTML诞生于李爵士的一片文章：HTML Tags 可以由这里进行访问：（https://html.com/tags/） HTML起手" />
+<meta property="og:description" content="今天跟着方方老师学习了HTML的相关知识，对于HTML有了新的认识。 接下来，我就会以博客的形式分享关于HTML的一些相关的知识。 HTML的历" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B01/" />
 <meta property="article:published_time" content="2019-10-23T16:43:43+08:00" />
 <meta property="article:modified_time" content="2019-10-23T16:43:43+08:00" />
 <meta itemprop="name" content="《HTML入门笔记1》">
-<meta itemprop="description" content="HTML是谁发明的 HTML诞生于李爵士的一片文章：HTML Tags 可以由这里进行访问：（https://html.com/tags/） HTML起手">
+<meta itemprop="description" content="今天跟着方方老师学习了HTML的相关知识，对于HTML有了新的认识。 接下来，我就会以博客的形式分享关于HTML的一些相关的知识。 HTML的历">
 
 
 <meta itemprop="datePublished" content="2019-10-23T16:43:43&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-23T16:43:43&#43;08:00" />
-<meta itemprop="wordCount" content="112">
+<meta itemprop="wordCount" content="1475">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="《HTML入门笔记1》"/>
-<meta name="twitter:description" content="HTML是谁发明的 HTML诞生于李爵士的一片文章：HTML Tags 可以由这里进行访问：（https://html.com/tags/） HTML起手"/>
+<meta name="twitter:description" content="今天跟着方方老师学习了HTML的相关知识，对于HTML有了新的认识。 接下来，我就会以博客的形式分享关于HTML的一些相关的知识。 HTML的历"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -348,8 +348,12 @@
 <ul>
 <li>
 <ul>
-<li><a href="#html是谁发明的">HTML是谁发明的</a></li>
+<li><a href="#html的历史">HTML的历史</a></li>
 <li><a href="#html起手式">HTML起手式</a></li>
+<li><a href="#常用的表章节标签">常用的表章节标签</a></li>
+<li><a href="#全局属性">全局属性</a></li>
+<li><a href="#内容标签">内容标签</a></li>
+<li><a href="#总结">总结</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -360,14 +364,26 @@
     <div class="post-content">
       
 
-<h2 id="html是谁发明的">HTML是谁发明的</h2>
+<p>今天跟着方方老师学习了HTML的相关知识，对于HTML有了新的认识。</p>
 
-<p>HTML诞生于李爵士的一片文章：HTML Tags
-可以由这里进行访问：（<a href="https://html.com/tags/）">https://html.com/tags/）</a></p>
+<p>接下来，我就会以博客的形式分享关于HTML的一些相关的知识。</p>
+
+<h2 id="html的历史">HTML的历史</h2>
+
+<p>HTML诞生于李爵士的一片文章：HTML Tags。</p>
+
+<p>李爵士在兼职的时候以一己之力创造了URL，HTML，HTTP。</p>
+
+<p><img src="/images/lijueshi.png" alt="李爵士本人" /></p>
 
 <h2 id="html起手式">HTML起手式</h2>
 
-<p>下列代码即为HTML的起手式</p>
+<p>打开VScode，输入</p>
+
+<pre><code>!
+</code></pre>
+
+<p>点击Tab,即可完成HTML起手工作</p>
 
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -383,10 +399,270 @@
 &lt;/html&gt;
 </code></pre>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<p>新手一般不需要对其中的内容进行更改，一般需要改动的地方只有</p>
+
+<pre><code>&lt;html lang=&quot;en&quot;&gt;
 </code></pre>
 
-<p>表示文档类型</p>
+<p>这里我们一般会把&rdquo;en&rdquo;更改为&rdquo;zh-CH&rdquo;，表示语言更改为中国的中文。</p>
+
+<p>其中，head部分一般是不可见的，而body部分在页面中是可视的，知道这个差别就可以了。</p>
+
+<h2 id="常用的表章节标签">常用的表章节标签</h2>
+
+<p>主要包括</p>
+
+<pre><code>&lt;h1&gt;&lt;/h1&gt;  ~  &lt;h6&gt;&lt;/h6&gt;
+&lt;section&gt;&lt;/section&gt;
+&lt;article&gt;&lt;/article&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;header&gt;&lt;/header&gt;
+&lt;footer&gt;&lt;/footer&gt;
+&lt;main&gt;&lt;/main&gt;
+&lt;aside&gt;&lt;/aside&gt;
+&lt;div&gt;&lt;/div&gt;
+</code></pre>
+
+<p>接下来，我们将依次进行介绍</p>
+
+<ul>
+<li>h1 ~ h6</li>
+</ul>
+
+<p>表示标题的意思，h1为主标题，23456数字由小到大表示次级标题，一般情况下，一篇文章中只有一个h1.</p>
+
+<ul>
+<li>section</li>
+</ul>
+
+<p>表示章节的意思，在一篇文章中分章节时使用，section可以进行嵌套使用。</p>
+
+<ul>
+<li>article</li>
+</ul>
+
+<p>表示页面里一段完整的内容，即使页面的其他部分不存在，也具有独立使用的意义，通常用来表示一篇文章或者一个帖子。它可以有自己的标题。</p>
+
+<ul>
+<li>p</li>
+</ul>
+
+<p>表示文章的一个段落。</p>
+
+<ul>
+<li>header</li>
+</ul>
+
+<p>表示整个网页的头部，也可以表示一篇文章的头部。</p>
+
+<ul>
+<li>footer</li>
+</ul>
+
+<p>表示网页、文章的尾部。</p>
+
+<ul>
+<li>main</li>
+</ul>
+
+<p>表示页面或文章的主体内容。</p>
+
+<ul>
+<li>aside</li>
+</ul>
+
+<p>用来放置与页面或文章相关主要内容间接相关的部分。</p>
+
+<ul>
+<li>div</li>
+</ul>
+
+<p>表示一个区块，用来做划分。</p>
+
+<h2 id="全局属性">全局属性</h2>
+
+<p>顾名思义，全局属性就是所有标签都有的属性，一般包含</p>
+
+<pre><code>class
+hidden
+contenteditable
+id
+style
+tabindex
+title
+</code></pre>
+
+<ul>
+<li>class</li>
+</ul>
+
+<p>该属性是用来对网页元素进行分类，如果不同元素的class属性是相同的，就认为它们是一类的。</p>
+
+<p>元素可以同时具有多个class属性，它们之间用空格隔开。</p>
+
+<ul>
+<li>contenteditable</li>
+</ul>
+
+<p>该属性允许用户修改内容。</p>
+
+<p>该属性有两个可能值：</p>
+
+<p>true或者不写：表示内容可以编辑；</p>
+
+<p>false：表示内容不可以编辑。</p>
+
+<ul>
+<li>id</li>
+</ul>
+
+<p>不到万不得已，不要使用id属性，使用class属性即可。</p>
+
+<ul>
+<li>hidden</li>
+</ul>
+
+<p>该属性表示当前元素不会被浏览器渲染，也不会在网页中被显示。</p>
+
+<ul>
+<li>style</li>
+</ul>
+
+<p>该属性表示用来指定当前元素的CSS样式。</p>
+
+<p>style的优先级高于CSS，但是低于JS。</p>
+
+<ul>
+<li>tabindex</li>
+</ul>
+
+<p>该属性的值一般是一个整数：</p>
+
+<p>正整数：表示Tab会按照顺序访问；</p>
+
+<p>0:表示Tab会最后访问；</p>
+
+<p>-1:表示Tab不会去访问。</p>
+
+<ul>
+<li>title</li>
+</ul>
+
+<p>该属性是用来为元素添加附加说明。</p>
+
+<h2 id="内容标签">内容标签</h2>
+
+<p>主要的内容标签有</p>
+
+<pre><code>ol + li
+ul + li
+dl + dt + dd
+pre
+code
+hr
+br
+em
+strong
+quote + blockquote
+</code></pre>
+
+<ul>
+<li><p>ol + li</p>
+
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre></li>
+</ul>
+
+<p>表示有序列表，会在内部的列表项前面产生数字编号。</p>
+
+<p>注意：ol中只能包含li作为唯一的内容子集。</p>
+
+<ul>
+<li><p>ul + li</p>
+
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></li>
+</ul>
+
+<p>表示无序列表，会在内部的列表项前面产生实心小圆点。</p>
+
+<p>注意：ul中只能包含li作为唯一的内容子集。</p>
+
+<ul>
+<li><p>dl + dt + dd</p>
+
+<pre><code>&lt;dl&gt;
+    &lt;dt&gt; &lt;/dt&gt;
+    &lt;dd&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+</code></pre></li>
+</ul>
+
+<p>表示描述性的列表，dt表示被描述的对象，dd表示描述的内容。</p>
+
+<ul>
+<li>pre</li>
+</ul>
+
+<p>HTML的默认规则是：多个连续空白都会被默认为一个空格。</p>
+
+<p>pre表示保留原来的格式，即会保留该标签内部原始的空格和回车。</p>
+
+<p>一般情况下，pre是配合code一起使用的。</p>
+
+<ul>
+<li>code</li>
+</ul>
+
+<p>表示标签内容是计算机代码，一般配合pre一起使用。</p>
+
+<ul>
+<li>hr</li>
+</ul>
+
+<p>用来在文章中分隔不同的主题，浏览器会将其渲染成一根水平线。</p>
+
+<p>该标签是单独使用的，没有闭合标签。</p>
+
+<ul>
+<li>br</li>
+</ul>
+
+<p>会产生一个换行的效果，该标签是单独使用的，没有闭合标签。</p>
+
+<ul>
+<li>a</li>
+</ul>
+
+<p>链接通过a标签表示，用户点击后，浏览器会跳转到指定的网址。</p>
+
+<ul>
+<li>em</li>
+</ul>
+
+<p>表示语气上的强调。</p>
+
+<ul>
+<li>strong</li>
+</ul>
+
+<p>表示包含的内容很重要，需要引起注意。</p>
+
+<ul>
+<li>quote 和 blockquote</li>
+</ul>
+
+<p>都是表示引用，区别在于后者会有换行的效果。</p>
+
+<h2 id="总结">总结</h2>
+
+<p>以上内容，就是我今天学习HTML所掌握的知识，希望我的分享能对大家有帮助，也希望大家可以与我沟通，分享你们的经验。</p>
+
+<p>作为一个小白，我在这里谢谢大家啦！</p>
 
     </div>
 
