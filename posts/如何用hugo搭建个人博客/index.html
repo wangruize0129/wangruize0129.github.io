@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>王大头的小窝</title>
+  <title>如何用Hugo搭建个人博客 - 王大头的小窝</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xianmin" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="Hugo安装（针对Windows用户） 在Hugo releases页面中下载对应版本的压缩包 解压后将hugo.exe放到自己之前建好的文件夹中" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,8 +35,8 @@
 <meta name="generator" content="Hugo 0.58.3" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="王大头的小窝" />
+<link rel="canonical" href="http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
+
 
 
 
@@ -58,18 +59,26 @@
 
 
 
-<meta property="og:title" content="王大头的小窝" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:title" content="如何用Hugo搭建个人博客" />
+<meta property="og:description" content="Hugo安装（针对Windows用户） 在Hugo releases页面中下载对应版本的压缩包 解压后将hugo.exe放到自己之前建好的文件夹中" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
+<meta property="article:published_time" content="2019-10-22T10:34:17+08:00" />
+<meta property="article:modified_time" content="2019-10-22T10:34:17+08:00" />
+<meta itemprop="name" content="如何用Hugo搭建个人博客">
+<meta itemprop="description" content="Hugo安装（针对Windows用户） 在Hugo releases页面中下载对应版本的压缩包 解压后将hugo.exe放到自己之前建好的文件夹中">
 
-<meta property="og:updated_time" content="2019-10-23T16:43:43+08:00" />
-<meta itemprop="name" content="王大头的小窝">
-<meta itemprop="description" content="Hugo theme jane example site.">
 
+<meta itemprop="datePublished" content="2019-10-22T10:34:17&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-22T10:34:17&#43;08:00" />
+<meta itemprop="wordCount" content="763">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="王大头的小窝"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:title" content="如何用Hugo搭建个人博客"/>
+<meta name="twitter:description" content="Hugo安装（针对Windows用户） 在Hugo releases页面中下载对应版本的压缩包 解压后将hugo.exe放到自己之前建好的文件夹中"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -229,7 +238,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -310,44 +319,185 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-<section id="posts" class="posts">
+          <article class="post bg-white">
   
-  
+  <header class="post-header">
+    <h1 class="post-title">如何用Hugo搭建个人博客</h1>
     
+    <div class="post-meta">
+      <time datetime="2019-10-22" class="post-time">
+        2019-10-22
+      </time>
+    </div>
+  </header>
+
   
   
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#hugo安装-针对windows用户">Hugo安装（针对Windows用户）</a></li>
+<li><a href="#博客搭建">博客搭建</a>
+<ul>
+<li><a href="#步骤一-创建一个new-site">步骤一 创建一个new site</a></li>
+<li><a href="#步骤二-添加主题">步骤二 添加主题</a></li>
+<li><a href="#步骤三-创建新的post并进行编辑">步骤三 创建新的post并进行编辑</a></li>
+<li><a href="#步骤四-启动hugo服务器">步骤四 启动Hugo服务器</a></li>
+<li><a href="#步骤五-自定义主题">步骤五 自定义主题</a></li>
+<li><a href="#步骤六-建立静态页面">步骤六 建立静态页面</a></li>
+</ul></li>
+<li><a href="#发布到github中">发布到GitHub中</a>
+<ul>
+<li><a href="#步骤一-建立一个-gitignore文件">步骤一 建立一个.gitignore文件</a></li>
+<li><a href="#步骤二-建立远程仓库">步骤二 建立远程仓库</a></li>
+<li><a href="#步骤三-推送public到远程仓库">步骤三 推送public到远程仓库</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
   
+  <div class="post-content">
+      
+
+<h2 id="hugo安装-针对windows用户">Hugo安装（针对Windows用户）</h2>
+
+<ul>
+<li>在Hugo releases页面中下载对应版本的压缩包</li>
+<li>解压后将hugo.exe放到自己之前建好的文件夹中</li>
+<li>建议使用D：\software\hugo\hugo.exe</li>
+<li>之后将hugo.exe的路径加到PATH中</li>
+<li>重启我们的终端，运行hugo version查看是否可以正常使用</li>
+</ul>
+
+<h2 id="博客搭建">博客搭建</h2>
+
+<p>进入Hugo官网，点击Quick Start开始操作</p>
+
+<h3 id="步骤一-创建一个new-site">步骤一 创建一个new site</h3>
+
+<p>quickstart建议使用你的GitHub的名字.github.io-creator</p>
+
+<pre><code>hugo new site quickstart
+</code></pre>
+
+<h3 id="步骤二-添加主题">步骤二 添加主题</h3>
+
+<pre><code>cd 你的GitHub的名字.github.io-creator
+git init
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
+</code></pre>
+
+<h3 id="步骤三-创建新的post并进行编辑">步骤三 创建新的post并进行编辑</h3>
+
+<pre><code>hugo new posts/my-first-post.md
+</code></pre>
+
+<h3 id="步骤四-启动hugo服务器">步骤四 启动Hugo服务器</h3>
+
+<pre><code>hugo server -D
+</code></pre>
+
+<p>此时，终端会显示一个地址:<a href="http://localhost:1313/">http://localhost:1313/</a></p>
+
+<p>按住ctrl点击网站即可浏览此时你编辑的内容了</p>
+
+<p>随意编辑或添加新内容，只需在浏览器中刷新即可快速查看更改。</p>
+
+<h3 id="步骤五-自定义主题">步骤五 自定义主题</h3>
+
+<p>在VScode中，ctrl+p搜索config.toml</p>
+
+<p>打开之后，可以根据个人喜好对内容进行更换</p>
+
+<pre><code>baseURL = &quot;http://example.org/&quot;
+languageCode = &quot;zh-Hans&quot;
+title = &quot;王大头的小窝&quot;
+theme = &quot;ananke&quot;
+</code></pre>
+
+<h3 id="步骤六-建立静态页面">步骤六 建立静态页面</h3>
+
+<pre><code>hugo
+</code></pre>
+
+<p>此时将会生成一个public文件</p>
+
+<h2 id="发布到github中">发布到GitHub中</h2>
+
+<h3 id="步骤一-建立一个-gitignore文件">步骤一 建立一个.gitignore文件</h3>
+
+<p>在.gitignore文件中编写/public/后保存</p>
+
+<h3 id="步骤二-建立远程仓库">步骤二 建立远程仓库</h3>
+
+<p>在GitHub中建立一个新的Repository命名为你的GitHub的名字.github.io</p>
+
+<h3 id="步骤三-推送public到远程仓库">步骤三 推送public到远程仓库</h3>
+
+<pre><code>cd public 
+git add .
+git commit -v
+git remote add origin git@github.com:你的GitHub的名字/你的GitHub的名字.github.io.git
+git push -u origin master
+</code></pre>
+
+<p>在GitHub中刷新页面，即可看到推送成功</p>
+
+<p>至此，博客已经顺利搭建并推送到你的GitHub中</p>
+
+  </div>
+
+  
+  
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">xianmin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-10-22
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+  
+  
+</article>
+
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
     
-  
-    
-  
-</section>
-
-
-
-
-
 
   
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-
-
-
 
         </div>
       </div>
