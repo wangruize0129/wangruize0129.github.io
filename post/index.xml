@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 王大头的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 23 Oct 2019 16:43:43 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2019 12:35:46 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML常用标签》</title>
+      <link>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Thu, 24 Oct 2019 12:35:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>今天学习的内容为HTML常用标签，主要包括： a标签 table标签 img标签 form标签 接下来，我们对这三个标签分别进行讲解。 a标签 属性 a标签</description>
+    </item>
     
     <item>
       <title>《HTML入门笔记1》</title>
